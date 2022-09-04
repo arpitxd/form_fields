@@ -1,0 +1,40 @@
+.cds-button {
+  height: fit-content;
+  width: fit-content;
+  transition: background-color 0.25s ease-in-out;
+  padding: 8px;
+  border-radius: 4px;
+  overflow: visible;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.peelGreen {
+  color: #fff;
+  border: none;
+  background: #008f79;
+}
+.white {
+  color: rgb(66, 66, 66);
+  background: #fff;
+  border: 1px solid #c5c5c6;
+  box-shadow: 0px 0px 3px 0px #c5c5c6;
+}
+.orange {
+  color: #fff;
+  border: none;
+  background: linear-gradient(90deg, #f0772c, #f95776);
+}
+.transparent {
+  color: inherit;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.cds-button:disabled {
+  cursor: not-allowed;
+  color: #fff;
+  background: #c5c5c6;
+}
