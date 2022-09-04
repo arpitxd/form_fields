@@ -1,7 +1,7 @@
 {
   "name": "cds-form-fields",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "This Library Contains CDS Components like button, text, image, link, loader",
   "author": "arpit-vijaywargiya",
   "keywords": [
