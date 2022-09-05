@@ -1,9 +1,10 @@
 {
   "name": "cds-form-fields",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "This Library Contains CDS Components like button, text, image, link, loader",
   "author": "arpit-vijaywargiya",
+  "license": "MIT",
   "keywords": [
     "react",
     "components",
@@ -72,6 +73,8 @@
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.18.13",
+    "@babel/node": "^7.18.10",
+    "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
     "@babel/preset-env": "^7.18.10",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
@@ -83,9 +86,13 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "prop-types": "^15.8.1",
     "storybook-addon-designs": "^6.3.1",
-    "webpack": "^5.74.0"
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }

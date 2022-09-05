@@ -17,6 +17,7 @@ const Button = ({
   label,
   theme,
   disabled,
+  ...props
 }) => {
   const themeClass = themeClassMapping[theme] || 'orange';
   return (
@@ -24,7 +25,9 @@ const Button = ({
       onClick={onClick}
       className={`${themeClass} cds-button pointer ${className}`}
       id={id}
-      disabled={disabled}>
+      disabled={disabled}
+      {...props}
+      >
       {label}
     </button>
   );

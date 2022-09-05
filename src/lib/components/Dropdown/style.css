@@ -62,3 +62,7 @@
 .dropdown-option:hover {
   background-color: lightskyblue;
 }
+
+.drop-down-placeholder {
+  margin: 0;
+}

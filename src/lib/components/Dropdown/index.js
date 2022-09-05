@@ -10,6 +10,7 @@ const Dropdown = ({
   label,
   selectedValue,
   onSelect = () => {},
+  id,
 }) => {
   const dropDownRef = useRef(null);
   const [displayedValue, setDisplayedValue] = useState('');
@@ -54,7 +55,8 @@ const Dropdown = ({
     <div
       className={`cds-dropdown-container ${className}`}
       tabIndex={0}
-      ref={dropDownRef}>
+      ref={dropDownRef}
+      id={id}>
       <div onClick={() => setShowOptions(true)} className={'dropdown-box'}>
         <div className="drop-down-placeholder">
           <Text>{displayedValue || label}</Text>
@@ -79,6 +81,7 @@ Dropdown.propTypes = {
   className: PropTypes.string,
   selectedValue: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   label: PropTypes.string.isRequired,
+  id: PropTypes.string
 };
 
 export default Dropdown;

@@ -35,7 +35,7 @@ const Text = ({
 
   return (
     <p
-      className={`${className}
+      className={`cds-text ${className}
        ${caseClass} ${fontSizeClass} ${fontWeightClass}`}
       id={id}
       style={{ color: color }}>
