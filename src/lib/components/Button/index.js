@@ -14,7 +14,7 @@ const Button = ({
   onClick = () => {},
   className = '',
   id = '',
-  children,
+  label,
   theme,
   disabled,
 }) => {
@@ -25,7 +25,7 @@ const Button = ({
       className={`${themeClass} cds-button pointer ${className}`}
       id={id}
       disabled={disabled}>
-      {children}
+      {label}
     </button>
   );
 };
@@ -36,7 +36,7 @@ Button.propTypes = {
   className: PropTypes.string,
   theme: PropTypes.string,
   disabled: PropTypes.bool,
-  children: PropTypes.node.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 export default Button;
