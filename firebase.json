@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "react-cds-components",
     "public": "storybook-static",
     "ignore": [
       "firebase.json",
