@@ -1,0 +1,39 @@
+.modal-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 10;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+}
+.modal-container {
+  background-color: #fff;
+  position: relative;
+  padding: 28px;
+  max-width: 500px;
+  min-width: 400px;
+  margin: auto;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .modal-container {
+    max-width: 371px;
+    min-width: 350px;
+    padding: 28px;
+  }
+}
+
+.modal-container .close-modal {
+  position: relative;
+  cursor: pointer;
+  float: right;
+  /* height: 30px;
+  right: 8px;
+  top: 8px;
+  width: 30px; */
+}

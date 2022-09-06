@@ -1,0 +1,50 @@
+.input-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 6px 0 6px;
+  background-color: white;
+  border: 1px solid #c5c5c6;
+  border-radius: 4px;
+}
+.input-text-container label {
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  background: #fff;
+  transition: transform 0.25s ease, font-size 0.25s ease;
+  line-height: 1;
+}
+.greyColor {
+  color: #57585a;
+}
+
+.input-text-container:focus-within {
+  border: 1px solid #008f79;
+  box-shadow: 0 0 0 4px #cce9e4;
+}
+.input-text-container .un-focused {
+  transform: translateY(-50%);
+}
+.input-text-container:focus-within label,
+.focused-label {
+  transform: translateY(-180%) !important;
+}
+
+.input-text-container input {
+  overflow: visible;
+  height: 30px;
+  font-size: 14px;
+  width: 100%;
+  margin: 0;
+  background: transparent;
+  border: 0;
+}
+.input-text-container input:focus {
+  outline: none;
+}
+.required:after {
+  content: ' *';
+  color: #f00;
+  font-size: 18px;
+}
