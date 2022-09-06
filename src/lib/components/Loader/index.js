@@ -4,7 +4,7 @@ import { addScrollClsOnBody, removeScrollClsOnBody } from "../../utils/utility";
 
 import "./style.css";
 
-const Loader = ({ closeLoader = () => {} }) => {
+const Loader = ({ closeLoader = () => {}, type = 'spinner' }) => {
   useEffect(() => {
     addScrollClsOnBody();
     return () => {
