@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/arpitxd/cds_form_fields.git"
+    "url": "https://github.com/arpitxd/react-cds-components.git"
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
